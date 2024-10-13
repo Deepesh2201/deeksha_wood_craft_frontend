@@ -21,7 +21,8 @@ const PaymentOptions = ({ productState }) => {
       {themeOption?.product?.secure_checkout && productState?.product?.secure_checkout ? (
         <div className='secure-site-sec'>
           <h4>{t("SecureCheckout")}</h4>
-          {themeOption?.product?.secure_checkout_image && <Image src={themeOption?.product?.secure_checkout_image} alt='Secure Checkout' className='img-fluid payment-img' height={26} width={376} />}
+          {/* {themeOption?.product?.secure_checkout_image && <Image src={themeOption?.product?.secure_checkout_image} alt='Secure Checkout' className='img-fluid payment-img' height={26} width={376} />} */}
+          {themeOption?.product?.secure_checkout_image && <Image src="https://dwcadmin.vercel.app/_next/image?url=https%3A%2F%2Fdwcapi.shinewell.in%2Fstorage%2F104%2F2_1723388787.png&w=256&q=75" alt='Secure Checkout' className='img-fluid payment-img' height={26} width={376} />}
         </div>
       ) : null}
     </>
