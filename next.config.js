@@ -9,7 +9,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "laravel.pixelstrap.net/fastkart",
+        hostname: "laravel.pixelstrap.net",
       },
       { 
         protocol: "http",
