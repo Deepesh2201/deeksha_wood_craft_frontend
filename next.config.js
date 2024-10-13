@@ -2,7 +2,7 @@
 const nextConfig = {
   env: { 
     baseUrl: "http://localhost:3001/", 
-    URL: "https://dwcapi.shinewell.in/api",
+    URL: "https://dwcapi.shinewell.in/public/api",
     storageURL:"https://dwcapi.shinewell.in/",
   },
   images: {
