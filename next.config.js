@@ -2,14 +2,14 @@
 const nextConfig = {
   env: { 
     baseUrl: "http://localhost:3001/", 
-    URL: "https://dwcapi.shinewell.in/public/api",
-    storageURL:"https://dwcapi.shinewell.in/",
+    URL: "https://laravel.pixelstrap.net/fastkart/api",
+    storageURL:"https://laravel.pixelstrap.net/fastkart",
   },
   images: {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "dwcapi.shinewell.in",
+        hostname: "laravel.pixelstrap.net/fastkart",
       },
       { 
         protocol: "http",
