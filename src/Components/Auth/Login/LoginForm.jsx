@@ -18,11 +18,11 @@ const LoginForm = ({mutate, isLoading}) => {
     <>
       
       <Formik
-        initialValues={{
-          email: 'john.customer@example.com',
-          password: '123456789',
-          recaptcha: ''
-        }}
+        // initialValues={{
+        //   email: '',
+        //   password: '',
+        //   recaptcha: ''
+        // }}
         validationSchema={YupObject({
           email: emailSchema,
           password: loginPasswordSchema,
