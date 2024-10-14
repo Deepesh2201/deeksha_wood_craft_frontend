@@ -46,7 +46,7 @@ const CollectionPrice = ({ filter, setFilter, attributeAPIData }) => {
           {filterPrice.map((price, i) => (
             <li key={i}>
               <div className='form-check category-list-box'>
-                <Input className='checkbox_animated' type='checkbox' id={`price-${price.id}`} value={price?.value} checked={checkPrice(price?.value)} onChange={applyPrice} />
+                <Input className='checkbox_animated' type='checkbox' id={`price-${price.id}`} value="101" checked={checkPrice(price?.value)} onChange={applyPrice} />
                 <Label className='form-check-label' htmlFor={`price-${price.id}`}>
                   {price?.price ? (
                     <span className='name'>
