@@ -2,14 +2,14 @@
 const nextConfig = {
   env: { 
     baseUrl: "https://dwc-liart.vercel.app/", 
-    URL: "https://dwcapi.shinewell.in/public/api",
-    storageURL:"https://dwcapi.shinewell.in",
+    URL: "https://api.deekshawood.com/api",
+    storageURL:"https://api.deekshawood.com",
   },
   images: {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "dwcapi.shinewell.in",
+        hostname: "api.deekshawood.com",
       },
       { 
         protocol: "http",
