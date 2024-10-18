@@ -4,7 +4,7 @@
 .coming-soon-section {
     @include pseudowh($width: 100vw, $height: 100vh);
     @include flex_common;
-    background-image: url(../../images/inner-page/coming-soon.jpg);
+    // background-image: url(../../images/inner-page/coming-soon.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

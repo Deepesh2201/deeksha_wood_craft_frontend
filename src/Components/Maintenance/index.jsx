@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import { Col, Row } from "reactstrap";
 import SettingContext from "@/Helper/SettingContext";
-import defaultMaintenance from "../../../public/assets/images/vegetable/bg-img.jpg"
+// import defaultMaintenance from "../../../public/assets/images/vegetable/bg-img.jpg"
+import defaultMaintenance from "../../../public/assets/images/furniture/banner/1.jpg"
 
 const MaintenanceComponent = () => {
   const { settingData } = useContext(SettingContext);
