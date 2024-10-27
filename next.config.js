@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: { 
-    baseUrl: "https://dwc-liart.vercel.app/", 
+    baseUrl: "https://deekshawood.com", 
     URL: "https://api.deekshawood.com/api",
     storageURL:"https://api.deekshawood.com",
   },
