@@ -13,6 +13,7 @@ import { Col } from 'reactstrap';
 import loginImage from '../../../../public/assets/images/inner-page/log-in.png';
 import AuthHeadings from '../Common/AuthHeadings';
 import LoginForm from './LoginForm';
+// import LoginForm from '../PhnLogin/LoginForm'; // Ensure this path is correct
 
 const LoginContent = () => {
   const { t } = useTranslation('common');
@@ -36,6 +37,8 @@ const LoginContent = () => {
             <AuthHeadings heading1={`Welcome to ${settingData?.general?.site_name}`} heading2={'LogInYourAccount'} />
             <div className='input-box mb-2'>
               <LoginForm  mutate={mutate} isLoading={isLoading}/>
+              
+
             </div>
             <Link href={`/auth/phn-login`}>
             <FormBtn title={'LogInWithPhn'} classes={{ btnClass: ' number-btn btn w-100' }} />

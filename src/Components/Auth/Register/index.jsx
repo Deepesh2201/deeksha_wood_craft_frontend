@@ -38,7 +38,7 @@ const RegisterContent = () => {
 
             <div className='sign-up-box'>
               <h4>{t('Alreadyhaveanaccount')}?</h4>
-              <Link href={`/auth/login`}>{t('LogIn')}</Link>
+              <Link href={'/auth/phn-login'}>{t('LogIn')}</Link>
             </div>
           </div>
         </Col>

@@ -26,7 +26,7 @@ const AddToWishlist = ({ productObj, customClass }) => {
        const sendPath = `${pathname}?${queryParams}`
        Cookies.set('CallBackUrl', sendPath);
        Cookies.set('wishListID', productObj.id);
-       router.push(`/auth/login`);
+       router.push('/auth/phn-login');
     }
   };
   return (

@@ -37,7 +37,7 @@ const [productWishlist, setProductWishlist] = useState(productState?.product?.is
       const sendPath = `${pathname}?${queryParams}`
       Cookies.set('CallBackUrl', sendPath);
       Cookies.set('wishListID', productObj.id);
-      router.push(`/auth/login`);
+      router.push('/auth/phn-login');
     }
   };
   const addToCompare = () => {

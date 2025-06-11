@@ -74,7 +74,7 @@ const HeaderProfile = ({ extraClass }) => {
           ) : (
             <>
               <li className='product-box-contain'>
-                <Link href={`/auth/login`}>{t('LogIn')}</Link>
+                <Link href={'/auth/phn-login'}>{t('LogIn')}</Link>
               </li>
 
               <li className='product-box-contain'>

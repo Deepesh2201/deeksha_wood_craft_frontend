@@ -59,7 +59,7 @@ const WishlistProvider = (props) => {
       const sendPath = `${pathname}?${queryParams}`;
       Cookies.set("wishListID", productObj.product_id);
       Cookies.set("CallBackUrl", sendPath);
-      router.push(`/auth/login`);
+      router.push('/auth/phn-login');
     }
   };
 

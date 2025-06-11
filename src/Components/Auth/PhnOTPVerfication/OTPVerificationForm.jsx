@@ -36,8 +36,8 @@ const OTPVerificationForm = () => {
             <div className='log-in-title'>
               <h3 className='text-content'>{t('OtpDescription')}</h3>
               <h5 className='text-content'>
-                {t('CodeSend') + ' '}
-                <span>{obscureEmail(phone)}</span>
+                {t('CodeSend') + ' : '}
+                <span>{(phone)}</span>
               </h5>
             </div>
             <div className='outer-otp'>

@@ -40,10 +40,10 @@ const PlaceOrder = ({ values, addToCartData, errors }) => {
     if (settingData?.activation?.guest_checkout && !access_token) {
       values["products"] = cartProducts;
       values["products"]?.length > 0 && mutate(values);
-      // if (Object?.keys(errors).length == 0 && values['delivery_description'] && values['payment_method']) {
-      //   values['products'] = cartProducts;
-      //   values['products']?.length > 0 && mutate(values);
-      // }
+      if (Object?.keys(errors).length == 0 && values['delivery_description'] && values['payment_method']) {
+        values['products'] = cartProducts;
+        values['products']?.length > 0 && mutate(values);
+      }
     } else {
       if (access_token && values["billing_address_id"] && values["shipping_address_id"] && values["delivery_description"] && values["payment_method"]) {
         const targetObject = {

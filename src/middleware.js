@@ -62,7 +62,7 @@ export async function middleware(request) {
   ];
 
   if (protectedRoutes.includes(path) && !request.cookies.has("uaf")) {
-    return NextResponse.redirect(new URL(`/auth/login`, request.url));
+    return NextResponse.redirect(new URL('/auth/phn-login', request.url));
   }else{
 
   }
@@ -70,28 +70,28 @@ export async function middleware(request) {
   if (path ==  `/checkout` && !request.cookies.has("uaf")) {
     if (settingData?.values?.activation?.guest_checkout ) {
       if (request.cookies.get('cartData').value == "digital") {
-        return NextResponse.redirect(new URL(`/auth/login`, request.url));
+        return NextResponse.redirect(new URL('/auth/phn-login', request.url));
       }
     }else{
-      return NextResponse.redirect(new URL(`/auth/login`, request.url));
+      return NextResponse.redirect(new URL('/auth/phn-login', request.url));
     }
   }
 
 
 
-  if (path == `/auth/login` && request.cookies.has("uaf")) {
+  if (path == '/auth/phn-login' && request.cookies.has("uaf")) {
     return NextResponse.redirect(new URL(`/`, request.url));
   }
 
-  if (path != `/auth/login`) {
+  if (path != '/auth/phn-login') {
     if (path == `/auth/otp-verification` && !request.cookies.has("ue")) {
-      return NextResponse.redirect(new URL(`/auth/login`, request.url));
+      return NextResponse.redirect(new URL('/auth/phn-login', request.url));
     }
     if (
       path == `/auth/update-password` &&
       (!request.cookies.has("uo") || !request.cookies.has("ue"))
     ) {
-      return NextResponse.redirect(new URL(`/auth/login`, request.url));
+      return NextResponse.redirect(new URL('/auth/phn-login', request.url));
     }
   }
 
